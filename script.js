@@ -16,7 +16,7 @@ function triangleCalculator(){
 
 
 
-// Area (A) = w x l
+// Rectangle Area (A) = w x l
 function rectangleCalculator(){ 
 
     // math functionality
@@ -31,4 +31,22 @@ function rectangleCalculator(){
 
     const recArea= document.getElementById('rec-area')
     recArea.innerHTML= rArea;
+}
+
+// Parallelogram Area (A) = b x h
+
+function parallelogramCalculator(){ 
+
+    // math functionality
+    const paraBase= document.getElementById('para-base');
+    const paraHeight= document.getElementById('para-height');
+    const pBase= parseInt(paraBase.value)
+    const pHeight= parseInt(paraHeight.value)
+    const pArea= parseInt(pBase*pHeight);
+    // console.log( Area)
+
+    // putting numbers in html
+
+    const paraArea= document.getElementById('para-area')
+    paraArea.innerHTML= pArea;
 }

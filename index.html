@@ -90,14 +90,17 @@
                           <p class="m-auto">Area (A) = b x h</p>
                           <div class="flex my-3 gap-2">
                             <div id="area1" class="flex justify-around">
-                                <input type="text" placeholder="b" class="pl-3 w-8/12 bg-slate-200 rounded-md mr-2"/><span class="r">cm</span>
+                                <input id="para-base" type="text" placeholder="b" class="pl-3 w-8/12 bg-slate-200 rounded-md mr-2"/><span class="r">cm</span>
                             </div>
                             <div id="area2" class="flex justify-around">
-                                <input type="text" placeholder="h" class="pl-3 w-8/12 bg-slate-200 rounded-md mr-2"/><span class="r">cm</span>
+                                <input id="para-height" type="text" placeholder="h" class="pl-3 w-8/12 bg-slate-200 rounded-md mr-2"/><span class="r">cm</span>
                             </div>
                           </div>
+                          <div>
+                            <p>Area: <span id="para-area">0</span> cm<sup>2</sup></p>
+                          </div>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-info text-white w-full">Calculate</button>
+                            <button onclick="parallelogramCalculator()" class="btn btn-info text-white w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -171,7 +174,7 @@
             </div>
         </section>
         <section id="sec2">
-            <div class="h-80 w-72 mt-8 pt-2 border-2 rounded-lg text-center">
+            <div class="h-3/6 w-72 mt-8 pt-2 border-2 rounded-lg text-center">
               <h3 class="text-1xl font-semibold "><u>Area Calculation</u></h3>
             </div>
         </section>
